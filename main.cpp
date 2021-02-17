@@ -6,6 +6,9 @@
 
 using namespace std;
 
+
+#define padding 3
+ 
 int main(int argc, char* argv[]){
 
     int startLevel = 0;

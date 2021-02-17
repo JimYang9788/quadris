@@ -9,4 +9,13 @@ class Block {
     char type;
     std::vector < std::tuple < int, int, char > > blockData;    
 };
+
+class IBlock: public Block {
+    public:
+    char type;
+    std::vector < std::tuple < int, int, char > > blockData;   
+    IBlock ();
+};
+
+
 #endif
