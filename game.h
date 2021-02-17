@@ -10,6 +10,9 @@ class Game {
     int seed;
     std::string user;
     Board * board;
+    
+
+
     Game (int level, std::string user, int seed);
     void printLevel();
     void printGame();
