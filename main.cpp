@@ -14,14 +14,29 @@ int main(int argc, char* argv[]){
 // • -startlevel n Starts the game in level n. The game starts in level 0 if this option is not
 // supplied.
 
-    string startLevel = "0";
+    int startLevel = 0;
+    int seed = 0;
+    string file = "";
+    string text = "";
 
     for (int i = 1; i < argc; ++i){
-        if (string (argv[i]) == "--level"){
-            startLevel = argv[++i];
+        if (string (argv[i]) == "-level"){
+            startLevel = atoi (argv[++i]);
         }
+        if (string (argv[i]) == "-seed"){
+            seed = atoi (argv[++i]);
+        }
+        if (string (argv[i]) == "-scriptfile"){
+            file = argv[++i];
+        }
+        if (string (argv[i]) == "-text"){
+            text = argv[++i];
+        }
+
     }
 
     cout << "current start level is: " << startLevel  << endl;
+    cout << "current seed is: " << seed  << endl;
+
     return 0; 
 }
