@@ -5,6 +5,7 @@
 
 #include "game.h"
 #include "board.h"
+#include "block.h"
 
 Game::Game (int level, std::string user, int seed):
 level(level),board(new Board(level)),score(0), user(user), seed(seed){}

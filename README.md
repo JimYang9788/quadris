@@ -1,2 +1,4 @@
 # quadris
-# A revisit of my CS 246 quadris project
+
+A version of tetris. Written in C++.
+I decided to redo this project to brush up my c++ skills.
