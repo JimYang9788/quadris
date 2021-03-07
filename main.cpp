@@ -55,17 +55,22 @@ int main(int argc, char* argv[]){
 
         }
         else if (command == "d"){
-            game->board->move('d');
+            game->board->move(command);
             game->printMegaData();
             game->printGame();
         }
         else if (command == "l"){
-            game->board->move('l');
+            game->board->move(command);
             game->printMegaData();
             game->printGame();
         }
         else if (command == "r"){
-            game->board->move('r');
+            game->board->move(command);
+            game->printMegaData();
+            game->printGame();
+        }
+        else if (command == "drop"){
+            game->board->move(command);
             game->printMegaData();
             game->printGame();
         }
