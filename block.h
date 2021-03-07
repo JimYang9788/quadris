@@ -13,8 +13,18 @@ class Block {
 
 class IBlock: public Block {
     public:
-    std::vector < std::tuple < int, int, char > > blockData;   
     IBlock ();
+};
+
+
+class TBlock: public Block {
+    public:
+    TBlock ();
+};
+
+class LBlock: public Block {
+    public:
+    LBlock ();
 };
 
 

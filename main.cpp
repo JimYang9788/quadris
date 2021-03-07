@@ -38,6 +38,7 @@ int main(int argc, char* argv[]){
 
     Game * game = new Game(startLevel,user, seed);
     cout << "Press Any Key To Start, Enter 'exit' to quit" << endl;
+    bool started = false;
     while (true){
         string command = "";
         getline(cin, command);
@@ -46,11 +47,37 @@ int main(int argc, char* argv[]){
             cout << "Thank you" << endl;
             break;
         }
+        else if (started == false){
+            started = true;
+            game->board->generateBlock();
+            game->printMegaData();
+            game->printGame();
+
+        }
+        else if (command == "d"){
+            game->board->move('d');
+            game->printMegaData();
+            game->printGame();
+        }
+        else if (command == "l"){
+            game->board->move('l');
+            game->printMegaData();
+            game->printGame();
+        }
+        else if (command == "r"){
+            game->board->move('r');
+            game->printMegaData();
+            game->printGame();
+        }
+        else if (command == "g"){
+            game->board->generateBlock();
+            game->printMegaData();
+            game->printGame();
+        }
         else 
         {
             game->printMegaData();
             game->printGame();
-            game->board->generateBlock();
         }
     }
     delete game;
