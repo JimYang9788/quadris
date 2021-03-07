@@ -14,6 +14,7 @@ class Board {
     std::vector<std::tuple <int,int,char>>  * inactiveBlock;
     
     Board ( int level,const int width = 15, const int height = 16);
+    void generateBlock ();
     void printBoard();
 
 };

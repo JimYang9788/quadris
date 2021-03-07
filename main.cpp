@@ -48,9 +48,9 @@ int main(int argc, char* argv[]){
         }
         else 
         {
-            cout << command << endl;
             game->printMegaData();
             game->printGame();
+            game->board->generateBlock();
         }
     }
     delete game;

@@ -8,11 +8,11 @@ class Block {
     public:
     char type;
     std::vector < std::tuple < int, int, char > > blockData;    
+    Block ();
 };
 
 class IBlock: public Block {
     public:
-    char type;
     std::vector < std::tuple < int, int, char > > blockData;   
     IBlock ();
 };

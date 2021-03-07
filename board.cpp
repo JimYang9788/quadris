@@ -15,3 +15,10 @@ void Board::printBoard(){
 
 Board::Board (int level,const int width, const int height):
     level(level),width(width),height(height){}
+
+void Board::generateBlock(){
+    this->activeBlock = new IBlock();
+    std::cout << "type is" << this->activeBlock->type << std::endl;
+    // std::cout << this->activeBlock->blockData << std::endl;
+
+}
